@@ -1,0 +1,114 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 66px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #14698d;
+  font-weight: 900;
+  border:2px;
+  border-color: #fff;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  margin: 0 0 24px 0;
+  opacity: 0.95;
+}
+
+p1 {
+  font-size: 20px;
+  margin: 0 0 24px 0;
+  opacity: 0.95;
+  color: #f52206
+}
+
+a {
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c6e032;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg {
+  animation: bg 80s linear infinite;
+  background: url("https://dyn1.heritagestatic.com/lf?set=path%5B1%2F5%2F6%2F0%2F1%2F15601149%5D&call=url%5Bfile%3Aproduct.chain%5D") repeat-x bottom left;
+  height: 100%;
+  position: absolute;
+  background-size: 1500px;
+  width: 4500px;
+  opacity: 0.2;
+}
+
+.middle-box {
+  animation: show 1s ease-in-out 1s forwards;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: -300px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  transition: all 0.3s ease-in-out;
+  border-radius: 100%;
+  border: solid 1px rgb(0, 0, 0);
+  width: 72px;
+  height: 72px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+.nav-item a {
+  font-size: 28px;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -268px;
+    opacity: 0.3;
+  }
+  100% {
+    margin-top: -300px;
+    opacity: 1;
+  }
+}
+
+@keyframes bg {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1500px;
+  }
+}
+
